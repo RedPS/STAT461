@@ -2,7 +2,8 @@
 
 %add packages here
 \usepackage{amsmath}
-
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
 %no packages after this point
 
 %
@@ -18,7 +19,7 @@
 
 %title 
 \title{HW1}
-\date{2019-01-26}
+\date{\today}
 \author{Pedram Safaei}
 
 \begin{document}
@@ -34,12 +35,6 @@
 	\section*{Problem 1} 
 	
 	1. Find the probability that a random number from 1 to 1000 is divisible by 2 or 3.
-
-	%equation is used to repesent math equations 
-	%equation* -> from package ---amsmath----
-	\begin{equation*}
-		f(x) = x^2
-	\end{equation*}
 	
 	\section*{Problem 2} 
 	2. For events A and B such that 
@@ -58,7 +53,7 @@
 	\end{equation*}
 	
 	\section*{Problem 5} 
-	5.Assume that 0.1\% of people from a certain population have a germ. A test gives false positive (that is, shows a person has this germ if this person does not actually have a germ) in 10\% of cases when the person does not have this germ. This test gives false negative (shows a person does not have this germ if this person actually has it) in 20\% of cases when this person has this germ. Suppose you pick a random person from the population and apply this test twice. Both times it gives you positive result (that is, the test says that this person has this germ). What is the probability that this person actually has this germ?
+	5. Assume that 0.1\% of people from a certain population have a germ. A test gives false positive (that is, shows a person has this germ if this person does not actually have a germ) in 10\% of cases when the person does not have this germ. This test gives false negative (shows a person does not have this germ if this person actually has it) in 20\% of cases when this person has this germ. Suppose you pick a random person from the population and apply this test twice. Both times it gives you positive result (that is, the test says that this person has this germ). What is the probability that this person actually has this germ?
 	
 	\section*{Problem 6} 
 6. A dashboard warning light is supposed to flash red if the car's pressure is too low. The probability of light flashing when it should is 98\%, and 3\% of the time it flashes for no reason. If there is a 10\% chance that the oil pressure is low, what is the chance that the driver should be concerned when light is flashing?
@@ -74,14 +69,18 @@
 	\section*{Problem 10} 
 
 	10. (SOA) A survey of a group’s viewing habits over the last year revealed the following
-information: \\\\
-(i) 28\% watched gymnastics\\
-(ii) 29\% watched baseball\\
-(iii) 19\% watched soccer\\
-(iv) 14\% watched gymnastics and baseball\\
-(v) 12\% watched baseball and soccer\\
-(vi) 10\% watched gymnastics and soccer\\
-(vii) 8\% watched all three sports.\\\\
-Calculate the percentage of the group that watched none of the three sports during the last year.
+information: 
 
+%Roman numbers
+\begin{enumerate}[label=(\roman*)]
+		\item 28\% watched gymnastics
+    \item 29\% watched baseball
+    \item 19\% watched soccer
+    \item 14\% watched gymnastics and baseball
+    \item 12\% watched baseball and soccer
+    \item 10\% watched gymnastics and soccer
+    \item  8\% watched all three sports.
+\end{enumerate}
+
+Calculate the percentage of the group that watched none of the three sports during the last year.
 \end{document}
