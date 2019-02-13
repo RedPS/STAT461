@@ -1,0 +1,95 @@
+\documentclass{article}
+
+%add packages here
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+\usepackage{enumitem}
+\usepackage{amssymb}
+%no packages after this point
+
+%
+% Basic Document Settings
+%
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+%title 
+\title{HW2}
+\date{\today}
+\author{Pedram Safaei}
+
+\begin{document}
+	%title page and make sure it doesn't number the title page
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	%title page over
+	
+	%section{} will number the section
+	%section*{} will not number the section
+\section*{Problem 1} 
+	
+	Calculate 	
+	\begin{align*} 
+	{8 \choose 4}, {10 \choose 8},{15 \choose 3}
+	\end{align*}
+	
+	
+\section*{Problem 2} 
+There are 8 apartments for 6 people. Each person chooses one apartment, and each apartment can host no more than one person. How many choices?
+	
+	\begin{align*}
+	\text{Number of Choices} &=  8 * 7 * 6 * 5 * 4 * 3 \\
+										 &= \mathbf{ 20160}
+	\end{align*}
+	
+\section*{Problem 3} 
+	We need to choose a committee of six people: three French and three Germans, out of six French and seven Germans. How many ways?
+	
+	\begin{align*}
+	\text{3 French} &= {6 \choose 3}  \rightarrow (A) \\
+	\text{3 German} &= {7 \choose 3} \rightarrow (B) \\
+	Total &= (A) * (B) \\
+			&= 700 \\
+	\end{align*}
+	
+\section*{Problem 4} 
+Using the binomial theorem, expand the brackets and compute all coefficients in 
+$(1 - 2x)^5$ 
+	
+	\begin{align*}
+	\end{align*}
+	
+\section*{Problem 5} 
+A collateralized debt obligation (CDO) is backed by 10 subprime mortgages. Five of them are from California, each of which defaults with probability 50\%. Three mortgages are from Florida, each of which defaults with probability 60\%. Two mortgages are from Nevada, each defaults with probability 40\%. A senior tranch in this CDO defaults only if all of these mortgages default. Find the probability that the senior tranch does not default in the following cases: \\\\
+(a) all independent; \\
+	\begin{align*}
+	P(\text{Senior from California doesn't default}) &= 1-0.50 \\ &= 0.50 \\
+	P(\text{Senior from Florida doesn't default}) &= 1-0.60 \\ &= 0.40 \\
+	P(\text{Senior from Nevada doesn't default}) &= 1-0.40 \\ &= 0.60 \\
+	P(\text{Senior doesn't default}) &= .5 ^5 * .4^3 * .6^2 \\ &= \mathbf{0.00072 }\\
+	\end{align*}
+(b) all mortgages from the same state default (or not default) simultaneously, but mortgages in different states are independent. 
+	
+	\begin{align*}
+	P(\text{Senior doesn't default}) &= .5  * .4 * .6 \\ &= \mathbf{0.1200 }\\
+	\end{align*}
+	
+\section*{Problem 6} 
+ (SOA) An auto owner can purchase a collision coverage and a disability coverage. These purchases are independent of each other. He is twice as likely to purchase a collision coverage than a disability coverage. The probability that he purchases both is 15\%. What is the probability that he purchases neither?
+ 
+	\begin{align*}
+	\end{align*}
+
+
+\section*{Problem 7} 
+Roll a die twice. Let A = {first roll is even}, B = {sum of two rolls is 4}. Find the conditional probability of A given B, and of B given A.  
+	\begin{align*}
+	\end{align*}
+	
+\end{document}
